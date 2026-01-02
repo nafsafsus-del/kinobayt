@@ -20,9 +20,9 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Asosiy ob'ektlar
-db = Database(config.DATABASE_URL)
+# db = Database(config.DATABASE_URL)
 bot = Bot(token=config.BOT_TOKEN)
-dp = Dispatcher()
+dp = Dispatcher(bot)
 
 # --- Asosiy Handlerlar ---
 
